@@ -31,8 +31,24 @@ void printMatrix(const double mat[][MAX_COL], const int maxRow) {
 
 }
 
+/** <code>sumOfRow</code> calculates the sum of elements in a specified row of the matrix.
+ * <BR>
+ * @param mat The matrix containing the elements.
+ * @param row The index of the row for which to calculate the sum.
+ * @param maxRow The number of rows in the matrix.
+ * @return The sum of elements in the specified row.
+ */
 double sumOfRow(const double mat[][MAX_COL], const int row, const int maxRow) {
-    return 0;
+    assert(maxRow <= MAX_ROW);
+    assert(maxRow > 0);
+    assert(MAX_COL > 0);
+    assert(row >= 0 && row < maxRow);
+
+    double sum = 0.0;
+    for(int j = 0; j < MAX_COL; j++){
+        sum += mat[row][j];
+    }
+    return sum;
 }
 
 double sumOfCol(const double mat[][MAX_COL], const int column, const int maxRow) {
