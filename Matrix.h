@@ -15,8 +15,8 @@ const int MAX_COL = 3;
 void printMatrix(const double mat[][MAX_COL], const int maxRow);
 void fillWithRandomNum(double mat[][MAX_COL], const int maxRow);
 
-double sumOfRow(const double mat[][MAX_COL], const int row, const int maxRow);
-double sumOfCol(const double mat[][MAX_COL], const int column, const int maxRow);
+double* sumOfRows(const double mat[][MAX_COL], const int maxRow);
+double* sumOfCols(const double mat[][MAX_COL], const int maxRow);
 
 double maxInMatrix(const double mat[][MAX_COL], const int maxRow);
 double minInMatrix(const double mat[][MAX_COL], const int maxRow);
