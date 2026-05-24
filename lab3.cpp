@@ -33,6 +33,8 @@ int main() {
         std::cout << "8. Check if matrix is identity matrix" << std::endl;
         std::cout << "9. Make identity matrix" << std::endl;
         std::cout << "10. Sum of diagonal" << std::endl;
+        std::cout << "11. Sum of all rows" << std::endl;
+        std::cout << "12. Sum of all columns" << std::endl;
         std::cout << "Enter your choice: ";
         std::cin >> choice;
 
@@ -109,6 +111,26 @@ int main() {
             case 10:
                 std::cout << "Sum of diagonal: "
                         << sumOfDiagonal(mat, MAX_ROW) << std::endl;
+                break;
+
+            case 11: {
+                    double* rowSums = sumOfRows(mat, MAX_ROW);
+                    std::cout << "Sums of rows:" << std::endl;
+                    for(int i = 0; i < MAX_ROW; ++i) {
+                        std::cout << "Row " << i + 1 << ": " << rowSums[i] << std::endl;
+                    }
+                    delete[] rowSums;
+                }
+                break;
+
+            case 12: {
+                    double* colSums = sumOfCols(mat, MAX_ROW);
+                    std::cout << "Sums of columns:" << std::endl;
+                    for(int i = 0; i < MAX_COL; ++i) {
+                        std::cout << "Column " << i + 1 << ": " << colSums[i] << std::endl;
+                    }
+                    delete[] colSums;
+                }
                 break;
 
             case 0:
