@@ -91,3 +91,15 @@ void fillWithRandomNum(double mat[][MAX_COL], const int maxRow) {
     }
 
 }
+
+double maxInMatrix(const double mat[][MAX_COL], const int maxRow) {
+    return 0.0;
+}
+
+double minInMatrix(const double mat[][MAX_COL], const int maxRow) {
+    return 0.0;
+}
+
+double averageOfMatrix(const double mat[][MAX_COL], const int maxRow) {
+    return 0.0;
+}

@@ -18,4 +18,8 @@ void fillWithRandomNum(double mat[][MAX_COL], const int maxRow);
 double sumOfRow(const double mat[][MAX_COL], const int row, const int maxRow);
 double sumOfCol(const double mat[][MAX_COL], const int column, const int maxRow);
 
+double maxInMatrix(const double mat[][MAX_COL], const int maxRow);
+double minInMatrix(const double mat[][MAX_COL], const int maxRow);
+double averageOfMatrix(const double mat[][MAX_COL], const int maxRow);
+
 #endif
