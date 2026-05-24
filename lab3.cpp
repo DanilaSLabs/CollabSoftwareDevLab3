@@ -31,6 +31,9 @@ int main() {
         std::cout << "5. Find maximum value" << std::endl;
         std::cout << "6. Find minimum value" << std::endl;
         std::cout << "7. Calculate average value" << std::endl;
+        std::cout << "8. Check if matrix is identity matrix" << std::endl;
+        std::cout << "9. Make identity matrix" << std::endl;
+        std::cout << "10. Sum of diagonal" << std::endl;
         std::cout << "Enter your choice: ";
         std::cin >> choice;
 
@@ -86,6 +89,27 @@ int main() {
             case 7:
                 std::cout << "Average value: "
                           << averageOfMatrix(mat, MAX_ROW) << std::endl;
+                break;
+
+            case 8:
+                if(isIdentityMatrix(mat, MAX_ROW)) {
+                    std::cout << "Matrix is an identity matrix." << std::endl;
+                } else {
+                    std::cout << "Matrix is not an identity matrix." << std::endl;
+                }
+                break;
+
+            case 9:
+                if(makeIdentityMatrix(mat, MAX_ROW)) {
+                    std::cout << "Matrix changed to identity matrix." << std::endl;
+                } else {
+                    std::cout << "Could not make identity matrix." << std::endl;
+                }
+                break;
+
+            case 10:
+                std::cout << "Sum of diagonal: "
+                        << sumOfDiagonal(mat, MAX_ROW) << std::endl;
                 break;
 
             case 0:

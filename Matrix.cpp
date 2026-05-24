@@ -160,3 +160,21 @@ double averageOfMatrix(const double mat[][MAX_COL], const int maxRow) {
     }
     return sum / totalElements;
 }
+
+bool isIdentityMatrix(const double mat[][MAX_COL], const int maxRow){
+
+    return false;
+
+}
+
+bool makeIdentityMatrix(double mat[][MAX_COL], const int maxRow){
+
+    return false;
+
+}
+
+double sumOfDiagonal(const double mat[][MAX_COL], const int maxRow){
+
+    retrun 0.0;
+
+}
