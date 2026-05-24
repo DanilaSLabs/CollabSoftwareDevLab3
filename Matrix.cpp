@@ -1,8 +1,11 @@
 /** \file Matrix.cpp
- * \brief Implementation of the Matrix class.
- * \details This file contains the implementation of the Matrix class, which provides basic operations for matrix manipulation, including addition, multiplication, and transposition.
+ * \brief Implementation of matrix utility functions.
+ * \details This file contains functions for basic matrix operations such as printing,
+ * filling with random numbers, summing rows and columns, finding minimum and maximum
+ * values, calculating the average, checking identity matrices, making identity matrices,
+ * and calculating diagonal sums.
  * \author Daniil Stankevich
- * \date 2026-05-20
+ * \date 2026-05-24
  * \copyright University of Nicosia
  */
 
