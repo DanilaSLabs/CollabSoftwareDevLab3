@@ -233,13 +233,13 @@ double sumOfDiagonal(const double mat[][MAX_COL], const int maxRow) {
     assert(maxRow > 0);
     assert(MAX_COL > 0);
     
-    double sum = 1;
+    double sum = 0.0;
 
     if (MAX_COL != maxRow)
         return 0; // Identity matrix must be a square matrix
 
     for (int i = 0; i < maxRow; ++i) {
-        sum *= mat[i][i];
+        sum += mat[i][i];
     }
 
     return sum;
