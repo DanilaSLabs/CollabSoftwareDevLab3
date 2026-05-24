@@ -73,6 +73,21 @@ double sumOfCol(const double mat[][MAX_COL], const int column, const int maxRow)
     return sum;
 }
 
+/** <code>fillWithRandomNum</code> fills the matrix with random numbers.
+ * <BR>
+ * @param mat The matrix to be filled with random numbers.
+ * @param maxRow The number of rows in the matrix.
+ */
 void fillWithRandomNum(double mat[][MAX_COL], const int maxRow) {
+
+    assert(maxRow <= MAX_ROW);
+    assert(maxRow > 0);
+    assert(MAX_COL > 0);
+
+    for(int i = 0; i < maxRow; i++){
+        for(int j = 0; j < MAX_COL; j++){
+            mat[i][j] = rand() % 10 + 1; // Random numbers from 1 to 10
+        }
+    }
 
 }
