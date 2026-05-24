@@ -138,6 +138,25 @@ double minInMatrix(const double mat[][MAX_COL], const int maxRow) {
     return minVal;
 }
 
+/** <code>averageOfMatrix</code> calculates the average value of all elements in the matrix.
+ * <BR>
+ * @param mat The matrix containing the elements.
+ * @param maxRow The number of rows in the matrix.
+ * @return The average value of all elements in the matrix.
+ */
 double averageOfMatrix(const double mat[][MAX_COL], const int maxRow) {
-    return 0.0;
+    
+    assert(maxRow <= MAX_ROW);
+    assert(maxRow > 0);
+    assert(MAX_COL > 0);
+
+    double sum = 0.0;
+    int totalElements = maxRow * MAX_COL;
+
+    for(int i = 0; i < maxRow; i++){
+        for(int j = 0; j < MAX_COL; j++){
+            sum += mat[i][j];
+        }
+    }
+    return sum / totalElements;
 }
