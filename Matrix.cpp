@@ -173,6 +173,11 @@ double averageOfMatrix(const double mat[][MAX_COL], const int maxRow) {
  * @return Returns <code>true</code> if this is an identity matrix.
  */
 bool isIdentityMatrix(const double mat[][MAX_COL], const int maxRow) {
+    
+    assert(maxRow <= MAX_ROW);
+    assert(maxRow > 0);
+    assert(MAX_COL > 0);
+    
     if (MAX_COL != maxRow)
         return false; // Identity matrix must be a square matrix
 
