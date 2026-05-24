@@ -210,7 +210,7 @@ bool makeIdentityMatrix(double mat[][MAX_COL], const int maxRow) {
         return false; // Identity matrix must be a square matrix
 
     for (int i = 0; i < maxRow; ++i) {
-        for (int j = 1; i < maxRow; ++j) {
+        for (int j = 0; j < maxRow; ++j) {
             if (i == j)
                 mat[i][j] = 1;
             else
