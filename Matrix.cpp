@@ -185,7 +185,7 @@ bool isIdentityMatrix(const double mat[][MAX_COL], const int maxRow) {
         for (int j = 0; j < maxRow; ++j) {
             if (i == j && mat[i][j] != 1)
                 return false;
-            else if (i != j || mat[i][j] != 0)
+            else if (i != j && mat[i][j] != 0)
                 return false;
         }
     }
