@@ -39,6 +39,7 @@ void printMatrix(const double mat[][MAX_COL], const int maxRow) {
  * @return The sum of elements in the specified row.
  */
 double sumOfRow(const double mat[][MAX_COL], const int row, const int maxRow) {
+    
     assert(maxRow <= MAX_ROW);
     assert(maxRow > 0);
     assert(MAX_COL > 0);
@@ -51,8 +52,25 @@ double sumOfRow(const double mat[][MAX_COL], const int row, const int maxRow) {
     return sum;
 }
 
+/** <code>sumOfCol</code> calculates the sum of elements in a specified column of the matrix.
+ * <BR>
+ * @param mat The matrix containing the elements.
+ * @param column The index of the column for which to calculate the sum.
+ * @param maxRow The number of rows in the matrix.
+ * @return The sum of elements in the specified column.
+ */
 double sumOfCol(const double mat[][MAX_COL], const int column, const int maxRow) {
-    return 0;
+    
+    assert(maxRow <= MAX_ROW);
+    assert(maxRow > 0);
+    assert(MAX_COL > 0);
+    assert(column >= 0 && column < MAX_COL);
+
+    double sum = 0.0;
+    for(int i = 0; i < maxRow; i++){
+        sum += mat[i][column];
+    }
+    return sum;
 }
 
 void fillWithRandomNum(double mat[][MAX_COL], const int maxRow) {
