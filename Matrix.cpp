@@ -240,7 +240,7 @@ double sumOfDiagonal(const double mat[][MAX_COL], const int maxRow) {
     double sum = 0.0;
 
     if (MAX_COL != maxRow)
-        return -1; // Matrix must be square to calculate the diagonal sum
+        return 0; // Matrix must be square to calculate the diagonal sum
 
     for (int i = 0; i < maxRow; ++i) {
         sum += mat[i][i];
