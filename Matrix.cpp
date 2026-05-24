@@ -165,6 +165,50 @@ double averageOfMatrix(const double mat[][MAX_COL], const int maxRow) {
 }
 
 
+/**
+ * <code>sumOfRows</code> returns an array containing the sum of each row.
+ * <BR>
+ * @param mat The matrix.
+ * @param maxRow The number of rows in the matrix.
+ * @return A dynamically allocated array containing the row sums.
+ */
+double* sumOfRows(const double mat[][MAX_COL], const int maxRow) {
+
+    assert(maxRow <= MAX_ROW);
+    assert(maxRow > 0);
+    assert(MAX_COL > 0);
+
+    double* rowSums = new double[MAX_ROW];
+
+    for(int i = 0; i < maxRow; i++) {
+        rowSums[i] = sumOfRow(mat, i, maxRow);
+    }
+
+    return rowSums;
+}
+
+/**
+ * <code>sumOfCols</code> returns an array containing the sum of each column.
+ * <BR>
+ * @param mat The matrix.
+ * @param maxRow The number of rows in the matrix.
+ * @return A dynamically allocated array containing the column sums.
+ */
+double* sumOfCols(const double mat[][MAX_COL], const int maxRow) {
+
+    assert(maxRow <= MAX_ROW);
+    assert(maxRow > 0);
+    assert(MAX_COL > 0);
+
+    double* colSums = new double[MAX_COL];
+
+    for(int j = 0; j < MAX_COL; j++) {
+        colSums[j] = sumOfCol(mat, j, maxRow);
+    }
+
+    return colSums;
+}
+
 //functions from Harald
 
 /**
