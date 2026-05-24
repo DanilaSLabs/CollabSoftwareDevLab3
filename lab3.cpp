@@ -1,9 +1,8 @@
 /** \file lab3.cpp
- * \brief Implementation of the Matrix class.
- * \details This f
- * ile contains the implementation of the Matrix class, which provides basic operations for matrix manipulation, including addition, multiplication, and transposition.
+ * \brief Main program for Lab Tutorial 3.
+ * \details This file contains the interactive menu used to call the matrix library functions.
  * \author Daniil Stankevich
- * \date 2026-05-20
+ * \date 2026-05-24
  * \copyright University of Nicosia
  */
 

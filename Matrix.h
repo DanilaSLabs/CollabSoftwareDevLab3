@@ -1,8 +1,8 @@
 /** \file Matrix.h
- * \brief Declaration of the Matrix class.
- * \details This file contains the declaration of the Matrix class, which provides basic operations for matrix manipulation, including addition, multiplication, and transposition.
+ * \brief Declarations for matrix utility functions.
+ * \details This file contains constants and function prototypes for matrix operations.
  * \author Daniil Stankevich
- * \date 2026-05-20
+ * \date 2026-05-24
  * \copyright University of Nicosia
  */
 
