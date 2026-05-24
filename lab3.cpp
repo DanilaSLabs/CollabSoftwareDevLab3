@@ -18,5 +18,6 @@ int main() {
                                   {4.0, 5.0, 6.0},
                                   {7.0, 8.0, 9.0} };
     printMatrix(mat, MAX_ROW);
+
     return 0;
 }
