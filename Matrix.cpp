@@ -228,6 +228,11 @@ bool makeIdentityMatrix(double mat[][MAX_COL], const int maxRow) {
  * @return Returns sum of diagonal, <code>-1</code> if this is not a square matrix.
  */
 double sumOfDiagonal(const double mat[][MAX_COL], const int maxRow) {
+    
+    assert(maxRow <= MAX_ROW);
+    assert(maxRow > 0);
+    assert(MAX_COL > 0);
+    
     double sum = 1;
 
     if (MAX_COL != maxRow)
