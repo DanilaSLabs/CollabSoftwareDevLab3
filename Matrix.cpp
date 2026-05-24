@@ -224,11 +224,12 @@ bool makeIdentityMatrix(double mat[][MAX_COL], const int maxRow) {
 }
 
 /**
- * The <code>sumOfDiagonal</code> function returns the sum of the diogonal of the argument matrix.
+ * The <code>sumOfDiagonal</code> function returns the sum of the main diagonal
+ * of the argument matrix.
  * <BR>
  * @param mat The matrix.
- * @param maxRow How many rows the matrix have.
- * @return Returns sum of diagonal, <code>-1</code> if this is not a square matrix.
+ * @param maxRow The number of rows in the matrix.
+ * @return Returns the sum of the main diagonal, or <code>-1</code> if this is not a square matrix.
  */
 double sumOfDiagonal(const double mat[][MAX_COL], const int maxRow) {
     
