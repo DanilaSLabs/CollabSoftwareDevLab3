@@ -92,8 +92,27 @@ void fillWithRandomNum(double mat[][MAX_COL], const int maxRow) {
 
 }
 
+/** <code>maxInMatrix</code> finds the maximum value in the matrix.
+ * <BR>
+ * @param mat The matrix to be searched for the maximum value.
+ * @param maxRow The number of rows in the matrix.
+ * @return The maximum value found in the matrix.
+ */
 double maxInMatrix(const double mat[][MAX_COL], const int maxRow) {
-    return 0.0;
+    
+    assert(maxRow <= MAX_ROW);
+    assert(maxRow > 0);
+    assert(MAX_COL > 0);
+
+    double maxVal = mat[0][0];
+    for(int i = 0; i < maxRow; i++){
+        for(int j = 0; j < MAX_COL; j++){
+            if(mat[i][j] > maxVal){
+                maxVal = mat[i][j];
+            }
+        }
+    }
+    return maxVal;
 }
 
 double minInMatrix(const double mat[][MAX_COL], const int maxRow) {
