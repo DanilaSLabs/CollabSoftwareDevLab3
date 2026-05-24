@@ -115,8 +115,27 @@ double maxInMatrix(const double mat[][MAX_COL], const int maxRow) {
     return maxVal;
 }
 
+/** <code>minInMatrix</code> finds the minimum value in the matrix.
+ * <BR>
+ * @param mat The matrix to be searched for the minimum value.
+ * @param maxRow The number of rows in the matrix.
+ * @return The minimum value found in the matrix.
+ */
 double minInMatrix(const double mat[][MAX_COL], const int maxRow) {
-    return 0.0;
+    
+    assert(maxRow <= MAX_ROW);
+    assert(maxRow > 0);
+    assert(MAX_COL > 0);
+
+    double minVal = mat[0][0];
+    for(int i = 0; i < maxRow; i++){
+        for(int j = 0; j < MAX_COL; j++){
+            if(mat[i][j] < minVal){
+                minVal = mat[i][j];
+            }
+        }
+    }
+    return minVal;
 }
 
 double averageOfMatrix(const double mat[][MAX_COL], const int maxRow) {
