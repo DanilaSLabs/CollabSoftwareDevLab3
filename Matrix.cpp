@@ -11,7 +11,23 @@
  #include <iostream>
  #include <cassert>
 
+/** <code>printMatrix</code> prints the contents of a matrix to the console.
+ * <BR>
+ * @param mat The matrix to be printed.
+ * @param maxRow The number of rows in the matrix.
+ */
 void printMatrix(const double mat[][MAX_COL], const int maxRow) {
+
+    assert(maxRow <= MAX_ROW);
+    assert(maxRow > 0);
+    assert(MAX_COL > 0);
+
+    for(int i = 0; i < maxRow; i++){
+        for(int j = 0; j < MAX_COL; j++){
+            std::cout << mat[i][j] << " ";
+        }
+        std::cout << std::endl;
+    }
 
 }
 
