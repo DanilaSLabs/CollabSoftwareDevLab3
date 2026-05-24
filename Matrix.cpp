@@ -175,6 +175,6 @@ bool makeIdentityMatrix(double mat[][MAX_COL], const int maxRow){
 
 double sumOfDiagonal(const double mat[][MAX_COL], const int maxRow){
 
-    retrun 0.0;
+    return 0.0;
 
 }
