@@ -200,7 +200,7 @@ bool isIdentityMatrix(const double mat[][MAX_COL], const int maxRow) {
  * identity matrix.
  * <BR>
  * @param mat The matrix.
- * @param maxRow How many rows the matrix have.
+ * @param maxRow The number of rows in the matrix.
  * @return Returns <code>false</code> if this is not a square matrix.
  */
 bool makeIdentityMatrix(double mat[][MAX_COL], const int maxRow) {
